@@ -1,6 +1,6 @@
 import React from 'react'
 import Errors from '../components/Error/error'
-import '../style/error.sass'
+import '../styles/error.sass'
 
 const Error = ({ statusCode }) => {
   return (

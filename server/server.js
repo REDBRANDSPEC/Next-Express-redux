@@ -14,7 +14,9 @@ app.prepare().then(() => {
 
   server.listen(port, err => {
     if (err) throw err
-    console.log(`Сервер запуще на порте ---> ${port}`)
+    console.log(`-----------------------------------`)
+    console.log(`Сервер запущен на порте ---> ${port}`)
+    console.log(`-----------------------------------`)
   })
 })
 
@@ -23,5 +25,5 @@ app.prepare().then(() => {
   server.get('/a', (req, res) => {
     return app.render(req, res, '/a', req.query)
   })
-
+, { image: req.params.image }
 */

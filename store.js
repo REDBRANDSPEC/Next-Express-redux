@@ -2,10 +2,13 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import Cont from './Redux/cont'
+import Token from './Redux/token'
+import Posts from './Redux/posts'
+import Comm from './Redux/comments'
+import Full from './Redux/fullpost'
 
 const rootReducer = combineReducers({
-  Cont
+  Token, Posts, Comm, Full
 });
 
 export const initializeStore = (initialState) => {
